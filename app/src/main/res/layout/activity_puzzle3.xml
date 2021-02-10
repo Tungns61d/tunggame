@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/puzzle_container"
+    android:background="@drawable/galaxy6"
+    tools:context=".Puzzle3">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/buttonLayout"
+
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="1"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/button_blue"
+
+                >
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Score"
+                    android:fontFamily="@font/supercell"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/score2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:fontFamily="@font/supercell"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/button_blue"
+                >
+
+                <TextView
+                    android:id="@+id/bestscore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Best Score"
+                    android:fontFamily="@font/supercell"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/bestscore2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--"
+                    android:fontFamily="@font/supercell"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    ></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/home_ico"
+
+            android:onClick="home"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/shuffle_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/return_ico"
+
+            android:onClick="shuffleImage"
+
+             />
+
+
+
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_ico"
+            />
+
+
+        <ImageButton
+            android:id="@+id/trophy_button"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/trophy"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

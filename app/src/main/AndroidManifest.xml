@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tunggame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tunggame">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity android:name=".PuzzleTile" />-->
+        <activity android:name=".PuzzleLevel" />
+<!--        <activity android:name=".PuzzleBoardView" />-->
+<!--        <activity android:name=".Connect4Cell" />-->
+<!--        <activity android:name=".Connect4Board" />-->
+        <activity android:name=".Connect4" />
+<!--        <activity android:name=".PuzzleBoard" />-->
+        <activity android:name=".Puzzle3" />
+        <activity android:name=".Math1sGameover" />
+        <activity android:name=".Math1s" />
+    </application>
+
+</manifest>

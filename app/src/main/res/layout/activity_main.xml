@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/galaxy3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:clickable="false"
+
+            android:fontFamily="@font/supercell"
+            android:text="PROJECT \n ANDROID \n GAME"
+
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/Math1s"
+                android:layout_width="250sp"
+                android:layout_height="80sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/button_orange"
+                android:fontFamily="@font/supercell"
+                android:onClick="math1s"
+
+                android:text="Math 1s"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Puzzle3"
+                android:layout_width="250sp"
+                android:layout_height="80sp"
+                android:layout_marginTop="30sp"
+                android:background="@drawable/button_orange"
+                android:fontFamily="@font/supercell"
+                android:onClick="puzzle3"
+
+                android:text="Puzzle"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Connect4"
+                android:layout_width="250sp"
+                android:layout_height="80sp"
+                android:layout_marginTop="30sp"
+                android:background="@drawable/button_orange"
+                android:fontFamily="@font/supercell"
+                android:onClick="connect4"
+
+                android:text="Connect Four"
+                android:textColor="#ffffff"
+
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="250sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_red"
+                android:fontFamily="@font/supercell"
+                android:onClick="quit"
+                android:text="Exit"
+                android:textColor="#ffffff"
+
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/supercell"
+            android:text="TUNG TUNG"
+            android:textColor="#ffffff"
+
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</RelativeLayout>
